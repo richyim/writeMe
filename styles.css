@@ -102,13 +102,14 @@ p {
     justify-content: center;
     margin-top: 40px;
     cursor: pointer;
-    height: 50px;
-    width: 50px;
+    height: 50px; /* Size of the icon for better touch */
+    width: 50px;  /* Size of the icon for better touch */
 }
 
 .texting-icon svg {
-    fill: white; /* Make the icon white */
+    fill: #ffcc00; /* Change the icon color to yellow */
 }
+
 
 /* WebEx Text */
 .webex-text {
