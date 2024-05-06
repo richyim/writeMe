@@ -3,26 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message Sent</title>
+    <title>Send Webex Message</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container finish-container">
-        <h1 class="header">Message Sent Successfully!</h1>
-        <p>Your message has been sent. Thank you for using Cisco WebEx.</p>
-        <div class="powered-by">
-            Powered by <span class="cisco">Cisco WebEx</span>
-        </div>
-
-        <!-- Texting Icon -->
-        <div class="texting-icon" onclick="window.location.href='https://richyim.github.io/writeMe';">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path d="M0 0h24v24H0z" fill="none"/>
-                <path d="M4 4h16v16H4z" fill="none"/>
-                <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 20l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-4 9h-2v2H8v-2H6V9h2V7h2v2h2v2z"/>
-            </svg>
-        </div>
-        <span class="webex-text">WebEx</span>
+    <div class="container">
+        <h1 class="header">Send a Message via Webex</h1>
+        <label for="emailDropdown">Choose recipient:</label>
+        <select id="emailDropdown">
+            <option value="layim@cisco.com">layim@cisco.com</option>
+            <option value="kara@cisco.com">kara@cisco.com</option>
+        </select>
+        <label for="messageText">Your message:</label>
+        <textarea id="messageText" placeholder="Type your message here..."></textarea>
+        <button id="sendMessageButton">Send Message</button>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
