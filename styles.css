@@ -87,22 +87,6 @@ textarea {
     fill: #ffcc00;
 }
 
-/* WebEx Text */
-.webex-text {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 10px;
-    font-size: 2em;
-    font-weight: bold;
-    color: #ffcc00;
-}
-
-/* Responsive styling */
-@media (max-width: 600px) {
-    .container {
-        width: 95%;
-    }
-}
 
 /* Add this to make the text more readable on different devices */
 p {
@@ -112,3 +96,37 @@ p {
     margin: 20px auto;
 }
 
+.texting-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+
+.texting-icon svg {
+    fill: white; /* Make the icon white */
+}
+
+/* WebEx Text */
+.webex-text {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    color: white; /* Make the text white */
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    .webex-text {
+        font-size: 1.5em;
+    }
+}
