@@ -74,57 +74,41 @@ textarea {
     color: #ffcc00; /* Cisco color */
 }
 
+/* Envelope Icon */
+.envelope-icon {
+    display: inline-block;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.envelope-icon svg {
+    height: 50px;
+    width: auto;
+    fill: #ffcc00;
+}
+
+/* WebEx Text */
+.webex-text {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+}
+
 /* Add this to make the text more readable on different devices */
 p {
     font-size: 1em;
     line-height: 1.4;
     max-width: 600px;
     margin: 20px auto;
-}
-
-.messaging-icon {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    width: 80px;
-    height: 80px;
-    background-color: #00BCE4; /* WebEx blue */
-    border-radius: 50%;
-    margin-top: 40px;
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-    color: white;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 48px;
-}
-
-.messaging-icon:before {
-    content: 'W'; /* Letter symbolizing WebEx */
-}
-
-/* Additional responsive handling for the icon */
-@media (max-width: 600px) {
-    .messaging-icon {
-        width: 60px;
-        height: 60px;
-        font-size: 36px;
-    }
-}
-
-.messaging-icon:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border: 20px solid transparent;
-    border-top-color: #ffcc00;
-    border-bottom: 0;
-    margin-left: -20px;
-    margin-bottom: -20px;
 }
 
