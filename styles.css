@@ -1,0 +1,83 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.header {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffcc00; /* A gold-like color for the header */
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#emailDropdown, #messageText {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+#sendMessageButton {
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#sendMessageButton:hover {
+    background-color: #e6b800;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+}
+
+
+.finish-container {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.powered-by {
+    margin-top: 30px;
+    font-style: italic;
+}
+
+.cisco {
+    font-weight: bold;
+    color: #ffcc00; /* Cisco color */
+}
+
+/* Add this to make the text more readable on different devices */
+p {
+    font-size: 1em;
+    line-height: 1.4;
+    max-width: 600px;
+    margin: 20px auto;
+}
